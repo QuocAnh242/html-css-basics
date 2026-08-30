@@ -1,0 +1,11 @@
+/* Setting all margins and paddings to zero for all elements to ensure consistent styling across different browsers. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting the font family and background color for the body element. */
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}

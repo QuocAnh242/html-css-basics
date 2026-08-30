@@ -21,3 +21,35 @@
 - Headings: h1, h2, h3,... h6
 
 - hyperlink a _a_ is an inline tag, for link to other website/href with 2 attributes 'href' & 'target', 'rel'
+
+# Session 2 - Font setups, CSS resets & selectors
+
+- Using link or import for Google Fonts
+
+- Font-weight: the bold and weight of the letter, 100 -> 900, (normal, bold, bolder, extra bold, light, thin, regular, medium, semibold,..)
+
+- Font-family: establish font and name
+
+- Serif: Letter with small extra lines
+
+- Sans-serif: Letter font without 'feet'
+
+- CSS Selectors: tag, class, id, attribute
+
+- Tags: h1, h2, h3, div, body, span, a
+
+- Class: .name, .tour, .tour-header
+
+- Id: #header, #content
+
+- Attribute: 'sample', 'hello-world-1', 'hello-world-2',..
+
+- CSS Structures
+
+- User agent stylesheet: Default CSS of broswers
+
+- CSS Reset: Used to reset CSS default of broswers
+
+- Special Selector: '\ \* > ~ +'
+
+# Session 3 -
