@@ -1,0 +1,1 @@
+Hello everyone, this project is my sketch book for me to show my old study things. I know it's kinda weird to go back to the basics but I always try to learn back while AI was taking my job and I am interested in building my own project without any AI enhancements D:
