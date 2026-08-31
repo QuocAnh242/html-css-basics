@@ -1,19 +1,82 @@
+include pug/mixins.pug
+
+-
+  const tours = [
+    {
+      title: 'Thailands Ayutthaya Temple cruise from Bangkook',
+      image: './images/Auytthaya.jpg',
+      priceFrom: 'From $1,200',
+      rating: '4.8',
+      reviews: 12,
+      duration: '9 hours',
+      price: 61
+    },
+    {
+      title: 'Floating markets and countryside tour in Bangkok',
+      image: './images/Floating-market.jpg',
+      priceFrom: 'From $890',
+      rating: '4.7',
+      reviews: 18,
+      duration: '6 hours',
+      price: 49
+    },
+    {
+      title: 'Chiang Mai mountain trek with village visit',
+      image: './images/Chiang-Mai.jpg',
+      priceFrom: 'From $1,450',
+      rating: '4.9',
+      reviews: 27,
+      duration: '12 hours',
+      price: 75
+    }
+  ]
+
+  const populars = [
+    {
+      title: 'The Grand Palace',
+      image: './images/Grand-Palace.jpg',
+      time: 'Sep 2023 - Dec 2023',
+      rating: '4.8',
+      reviews: 12,
+      duration: '9 hours'
+    },
+    {
+      title: 'Wat Arun (Temple of Dawn)',
+      image: './images/Wat-Arun.jpg',
+      time: 'Sep 2023 - Dec 2023',
+      rating: '4.7',
+      reviews: 18,
+      duration: '6 hours'
+    },
+    {
+      title: 'Chatuchak Weekend Market',
+      image: './images/Chatuchak-Market.jpg',
+      time: 'Sep 2023 - Dec 2023',
+      rating: '4.9',
+      reviews: 27,
+      duration: '12 hours'
+    }
+  ]
 doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title HTML CSS Master
-        link(rel="preconnect" href="https://fonts.googleapis.com")
-        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-        link(href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet")
-    body
-        tour-list
-            tour-card
-                img.tour-image(src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjB2YWNhdGlvbnxlbnwwfHwwfHx8&auto=format&fit=crop&w=500&q=60" alt="Beach Vacation")
-                .tour-content
-                    h2.tour-title Beach Vacation
-                    .tour-review
-                        span.tour-rating 4.5
-                        span.tour-count (200 reviews)
-                    p.tour-description Enjoy the sun, sand, and sea with our exclusive beach vacation packages.
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title HTML Document
+    link(rel='stylesheet', href='styles/styles.css')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='./styles/popular.css')
+  body
+    h2(style='text-align: left; margin: 20px;') Our Tour Lists
+    .tour-wrapper
+      .tour-list
+        each tour in tours
+          +tourCard(tour)
+          
+    h2(style='text-align: left; margin: 20px;') Popular things to do in Bangkok
+    .container 
+      .popular-list
+        each popular in [1, 2, 3]
+          +popularItem()
