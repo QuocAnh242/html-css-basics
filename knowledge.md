@@ -115,3 +115,17 @@
 # Session 7 - Position
 
 - Position: static, relative, absolute, sticky, fixed
+
+# Session 8 - Transform
+
+- breakpoints: 320px 480px 768px 1024px 1200 1366 1440 1600 1920
+
+- _min-width_: Breakpoints
+
+- _max-width_: breakpoints - 0.2px
+
+- media queries
+
+- transform: translate(translateX, translateY), skew(skewX, skewY), rotate(rotateX,Y,Z), scale(X, y)
+
+# Session 9 - Variable

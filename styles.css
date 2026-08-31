@@ -33,6 +33,8 @@ body {
 
 /* Setting styles for the tour card container. */
 .tour-card {
+  display: flex;
+  flex-direction: column;
   width: 370px;
   height: auto;
   /* background color */
@@ -77,6 +79,9 @@ body {
 }
 
 .tour-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 20px 20px;
 }
 
@@ -111,6 +116,10 @@ body {
 }
 
 .tour-btn {
+  display: inline-block;
+  margin-top: auto;
+  align-self: flex-start;
+  width: auto;
   font-size: 14px;
   font-weight: 500;
   padding: 8px 17px;
@@ -118,7 +127,6 @@ body {
   background-color: #3b71fe;
   border-radius: 8px;
   border-color: #3b71fe;
+  /* line-height 17/14 font-size for responsive */
   line-height: 17px;
-  /* line-height 17/14 cho font-size for responsive */
-  display: inline-block;
 }

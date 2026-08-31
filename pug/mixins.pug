@@ -15,13 +15,13 @@ mixin tourCard(tour)
 mixin popularItem(popular)
   .popular-item
     .popular-image
+      .popular-overlay
       img(src=popular.image, alt=popular.title)
-      span.popular-label Must See
+      span.popular-label= popular.label
     .popular-content
       span.popular-time= popular.time
       .popular-title= popular.title
       .popular-review
         .popular-rating
-          img(width='15', src='./images/star-icon.png', alt='popular-rating')
+          img(width='13', src='./images/star-icon.png', alt='popular-rating')
           span.popular-count= `${popular.rating} (${popular.reviews} reviews)`
-        span.popular-duration= `Duration: ${popular.duration}`
