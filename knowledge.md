@@ -4,6 +4,8 @@
 
 - leveled root ../
 
+- Figma Design, tools
+
 - Name convention should be general and easy to understand
 
 - Attribute _attribute_ example: 'sample', 'hello-world-1', 'hello-world-2',..
@@ -176,9 +178,11 @@
 
 - Nested codes
 
-- Flex-shrink, flex-grow
+- Flex-shrink, flex-grow, flex-basis
 
 # Session 12 - Advanced CSSs
+
+-Pseudo-elements: ::before, ::after, ::first-letter, ::first-line, ::selection
 
 - z-index, white-space
 
@@ -195,3 +199,29 @@
 - Counter: Using for indexing items
 
 - Clamp, min, max, container queries, container-items, container-name
+
+- em, rem, px
+
+- Label tag: Define for input tag
+
+- Combinators
+
+# Session 13 - Custom
+
+- Checkboxs, Ratio, Toggle, Dropdown
+
+- Table basics
+
+- Customize Advanced Input
+
+# Session 14 - Animations
+
+- Transform
+
+- Scale
+
+- Rotate
+
+- Skew
+
+- Clip-path, shape-outside

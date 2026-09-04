@@ -1,63 +1,92 @@
-# Bangkok Tour
+# Bangkok Tour — Landing Page
 
-A small HTML, CSS, and Pug practice project for a Bangkok tour page. The page includes tour cards, popular activities, hidden gems, a responsive footer, and social links.
+landing page built with HTML. CSS through **Pug (Jade)**, **Dart Sass (SCSS)**.
 
-## Project Structure
+![Bangkok Tour Preview](images/preview.jpg)
+
+---
+
+## Highlights & Features
+
+- **Semantic HTML5 & Pug Templating:** Reusable layouts, mixins, and includes for clean, modular markup.
+
+- **Modern Sass Architecture (Sass Module System):** Utilizes modern `@use` and `@forward` rules (Dart Sass 1.80+ standard) replacing deprecated `@import`.
+
+- **Responsive Web Design (RWD):** Fluid typography, Flexbox, and CSS Grid layouts optimized across Mobile, Tablet, and Desktop breakpoints.
+
+- **Micro-interactions:** Smooth CSS transitions for button states, card hover lift effects, and interactive header pills.
+
+- **Organized Structure:** BEM naming convention and 7-1 pattern directory structure (Abstracts, Base, Components, Layouts).
+
+---
+
+## My Project Structure
 
 ```text
-images/                 # Page images and icons
-sass/main.scss          # Sass entry file
-styles/                 # Compiled CSS files
-views/index.pug         # Main Pug entry file
-views/mixins.pug        # Reusable Pug mixins
-views/home/             # Home page sections
-views/layouts/          # Header, footer, and page layout
+html-css-basics/
+├── images/                 # Optimized photography and icons
+├── sass/                   # Modern Sass (SCSS) source files
+│   ├── abstracts/          # Variables, mixins, and _index.scss (@forward)
+│   ├── base/               # CSS reset and global utilities
+│   ├── components/         # Buttons, top tours, popular, hidden gems
+│   ├── layouts/            # Header and footer styles
+│   └── main.scss           # Main Sass entry point (@use modules)
+├── styles/                 # Compiled CSS output and source maps
+├── views/                  # Pug template files
+│   ├── home/               # Section views (TopTours, Populars, HiddenGems)
+│   ├── layouts/            # Base Tour-layout, Header, Footer
+│   ├── mixins.pug          # Reusable Pug mixins
+│   ├── index.pug           # Main page template
+│   └── index.html          # Compiled HTML output
+├── knowledge.md            # Master course notes and CSS cheat sheet
+└── package.json            # Build scripts and dependencies
 ```
 
-## Requirements
+---
 
-- Node.js and npm
-- Sass
-- Pug CLI
+### Prerequisites
 
-Install the local development dependencies from the project root:
+Ensure you have [Node.js](https://nodejs.org/) (v18 or newer) installed on your machine.
+
+### Installation
+
+Clone the repository and install the development dependencies:
 
 ```bash
-npm install --save-dev pug-cli sass
+git clone <repository-url>
+cd html-css-basics
+npm install
 ```
 
-Global installation is not required. Use `npx` so the commands work without administrator permissions.
+---
 
-## Compile Pug
+## Development & Build Scripts
 
-Compile the main view to HTML:
+Run these scripts from inside the `html-css-basics` directory:
+
+| Command              | Description                                                        |
+| :------------------- | :----------------------------------------------------------------- |
+| `npm run sass:build` | Compiles `sass/main.scss` into `styles/main.css` (single build).   |
+| `npm run sass:watch` | Watches for `.scss` changes and compiles CSS in real-time.         |
+| `npm run pug:build`  | Compiles `views/index.pug` into `views/index.html` (single build). |
+| `npm run pug:watch`  | Watches for `.pug` changes and compiles HTML in real-time.         |
 
 ```bash
-npx pug ./views/index.pug --out ./views
+xdg-open views/index.html
 ```
 
-Watch the Pug files and compile automatically:
+---
 
-```bash
-npx pug ./views/index.pug --watch --out ./views
-```
+## Technologies Used
 
-## Compile Sass
+- **Markup:** [Pug](https://pugjs.org/) (formerly Jade)
+- **Styling:** [Dart Sass](https://sass-lang.com/) (SCSS syntax)
+- **Icons:** [Bootstrap Icons CDN](https://icons.getbootstrap.com/)
+- **Typography:** [Google Fonts (Inter)](https://fonts.google.com/specimen/Inter)
+- **Version Control:** Git & GitHub
 
-Compile the Sass entry file into CSS:
+---
 
-```bash
-npx sass ./sass/main.scss ./styles/main.css
-```
+## 📄 License
 
-Watch Sass changes:
-
-```bash
-npx sass --watch ./sass/main.scss:./styles/main.css
-```
-
-Open `views/index.html` with Live Server or the VS Code Live Preview extension after compiling.
-
-## Image Optimization
-
-The image files are kept locally in `images/`. For smaller page sizes, convert large JPG files to WebP with a tool such as [Squoosh](https://squoosh.app/), then update the image paths in the Pug files.
+This project is open source and available under the [ISC License](LICENSE).
