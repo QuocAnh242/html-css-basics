@@ -9,6 +9,7 @@
     "pug:watch": "pug -w views/index.pug -o views -P"
   },
   "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.80.0"
   },
   "author": "",
