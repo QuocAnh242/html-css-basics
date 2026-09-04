@@ -1,0 +1,46 @@
+// --- Colors ---
+$bg-page: #f5f5f5;
+$card-bg: #ffffff;
+$card-border: #e0e0e0;
+$gray-color: #f4f5f6;
+$gray-light: #f4f5f6;
+
+$text-main: #23262f;
+$text-muted: #353945;
+$text-light: #777e91;
+$text-secondary: #4f4f4f;
+
+$primary: #3b71fe;
+$primary-dark: #2d5fe9;
+
+$badge-bg: rgba(53, 57, 69, 0.8);
+
+// --- Shadows ---
+$shadow-soft: 0 12px 64px rgba(18, 28, 45, 0.06);
+$shadow-badge: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+// --- Border Radius ---
+$radius-xs: 4px;
+$radius-sm: 8px;
+$radius-md: 14px;
+$radius-lg: 20px;
+$radius-pill: 60px;
+
+// --- Spacing ---
+$space-1: 8px;
+$space-2: 12px;
+$space-3: 16px;
+$space-4: 20px;
+$space-5: 30px;
+
+// --- Layout & Typography ---
+$container-width: 1540px;
+$font-primary: "Inter", sans-serif;
+
+// --- Breakpoints (Media Queries) ---
+$bp-mobile-sm: 600px;
+$bp-mobile: 640px;
+$bp-tablet: 768px;
+$bp-tablet-md: 900px;
+$bp-tablet-lg: 980px;
+$bp-desktop: 1024px;

@@ -128,4 +128,70 @@
 
 - transform: translate(translateX, translateY), skew(skewX, skewY), rotate(rotateX,Y,Z), scale(X, y)
 
-# Session 9 - Variable
+# Session 9 - Variables, Grid
+
+- Setup Variables for color, font and attributes
+
+- Fraction unit
+
+- Grid Template: display _grid_, grid-auto-flow : column/row,
+
+- Grid-rows/ Grid-columns, Tracklines
+
+- Section tag: Using for defining section of a div
+
+- Time: Inline tag, define a time
+
+- Span: Inline tag, define a span
+
+- Object-fit: Cover, Contain, Fill,
+
+- Object-position: left, right, center
+
+- CSS Selector Child: nth-child(number), not(seleectors)
+
+- fit-content: data fit with their content
+
+- margin-inline / margin-left / margin-right
+
+- padding-inline / padding-left / padding-right
+
+- caniuse.com for testing tag / components
+
+# Session 10 - Semantic tags
+
+- Header, footer, main, section, article, nav, aside
+
+- List style: ul('dics') / ol('dec')
+
+- Inputs: text, email, number, phone, time, date, file, password, checkbox, radio... / placeholder / required/ disabled / readonly.
+
+- Button: button / submit / reset / Autocomplete / Inputmode
+
+- Transition
+
+- Select: Use for ul & li
+
+# Session 11 - SASS
+
+- Nested codes
+
+- Flex-shrink, flex-grow
+
+# Session 12 - Advanced CSSs
+
+- z-index, white-space
+
+- Pointer-events
+
+- Scroll-snap-type (x/y), scroll-snap-align (start/end/center)
+
+- Overflow (hidden/visible/scroll)
+
+- Aspect-ratio: 16/9, 9/16, 4/3, 3/4, 1/1,...
+
+- Order: Define order in flex item
+
+- Counter: Using for indexing items
+
+- Clamp, min, max, container queries, container-items, container-name

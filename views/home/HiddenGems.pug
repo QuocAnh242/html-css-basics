@@ -1,0 +1,16 @@
+-
+    const hiddenGems = [
+        { name: 'Chiang Dao Cave', image: '../images/Chiang-Dao.jpg', date: 'Sep 28, 10AM - 5PM' },
+        { name: 'Ko Chang Island', image: '../images/Ko-Chang.jpg', date: 'Sep 29, 9AM - 4PM' },
+        { name: 'Koh Lanta', image: '../images/Koh-Lanta.jpg', date: 'Sep 30, 8AM - 6PM' },
+        { name: 'Mon Jam', image: '../images/Mon-Jam.jpg', date: 'Oct 1, 7AM - 3PM' },
+        { name: 'Phu Chi Fa', image: '../images/Phu-Chi-Fa.jpg', date: 'Oct 2, 6AM - 2PM' }
+    ]
+
+section.hidden-gems-section
+    .container
+        h2.section-title.hidden-gems-heading Hidden Gems in Bangkok
+        .gem-list
+            each hiddenGem in hiddenGems
+                +hiddenGemItem(hiddenGem)
+button.btn-1 Explore More
