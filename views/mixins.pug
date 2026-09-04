@@ -1,0 +1,36 @@
+mixin tourCard(tour)
+  .tour-card
+    .tour-image
+      img(src=tour.image, alt=tour.title)
+      span.tour-price= tour.priceFrom
+    .tour-content
+      .tour-title= tour.title
+      .tour-review
+        .tour-rating
+          img(width='15', src='../images/star-icon.png', alt='tour-rating')
+          span.tour-count= `${tour.rating} (${tour.reviews} reviews)`
+        span.tour-duration= `Duration: ${tour.duration}`
+      button.tour-btn= `Tour Price $${tour.price}`
+
+mixin popularItem(popular)
+  .popular-item
+    .popular-image
+      .popular-overlay
+      img(src=popular.image, alt=popular.title)
+      span.popular-label= popular.label
+    .popular-content
+      span.popular-time= popular.time
+      .popular-title= popular.title
+      .popular-review
+        .popular-rating
+          img(width='12', src='../images/star-icon.png', alt='popular-rating')
+          span.popular-count= `${popular.rating} (${popular.reviews} reviews)`
+
+mixin hiddenGemItem(hiddenGem)
+  .gem-item
+    img(src=hiddenGem.image, alt=hiddenGem.name)
+    .gem-overlay
+      h3.gem-title= hiddenGem.name
+      span.gem-date= hiddenGem.date
+
+      

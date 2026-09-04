@@ -1,0 +1,37 @@
+-
+  const tours = [
+    {
+      title: 'Thailands Ayutthaya Temple Cruise from Bangkok',
+      image: '../images/Auytthaya.jpg',
+      priceFrom: 'From $1,200',
+      rating: '4.8',
+      reviews: 12,
+      duration: '9 hours',
+      price: 61
+    },
+    {
+      title: 'Floating markets and countryside tour in Bangkok',
+      image: '../images/Floating-market.jpg',
+      priceFrom: 'From $890',
+      rating: '4.7',
+      reviews: 18,
+      duration: '6 hours',
+      price: 49
+    },
+    {
+      title: 'Chiang Mai mountain trek with village visit',
+      image: '../images/Chiang-Mai.jpg',
+      priceFrom: 'From $1,450',
+      rating: '4.9',
+      reviews: 27,
+      duration: '12 hours',
+      price: 75
+    }
+  ]
+  
+section.content-section
+        .container
+          h2.section-title Top Bangkok Tours
+          .tour-list
+            each tour in tours
+              +tourCard(tour)

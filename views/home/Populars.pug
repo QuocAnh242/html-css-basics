@@ -1,0 +1,46 @@
+-
+    const populars = [
+        {
+            title: 'The Grand Palace',
+            image: '../images/Grand-Palace.jpg',
+            time: 'Sep 28, 10AM - 5PM',
+            rating: '4.8',
+            reviews: 12,
+            duration: '9 hours',
+            label: 'Must See'
+        },
+        {
+            title: 'Wat Arun (Temple of Dawn)',
+            image: '../images/Wat-Arun.jpg',
+            time: 'Sep 29, 9AM - 4PM',
+            rating: '4.7',
+            reviews: 18,
+            duration: '6 hours',
+            label: 'Recommended'
+        },
+        {
+            title: 'Chatuchak Weekend Market',
+            image: '../images/Chatuchak.jpg',
+            time: 'Sep 30, 8AM - 6PM',
+            rating: '4.9',
+            reviews: 27,
+            duration: '12 hours',
+            label: 'Popular'
+        },
+        {
+            title: 'Bangkok Night Market',
+            image: '../images/Bangkok-Night-Market.jpg',
+            time: 'Sep 28, 6PM - 11PM',
+            rating: '4.9',
+            reviews: 34,
+            duration: '8 hours',
+            label: 'Night Life'
+        }
+    ]
+
+section.content-section
+    .container
+        h2.section-title Popular things to do in Bangkok
+        .popular-list
+            each popular in populars
+                +popularItem(popular)

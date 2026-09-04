@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.header {
+  background-color: white;
+  padding: 16px 0;
+  box-shadow: 0px 6px 30px 0px rgba(15, 15, 15, 0.16);
+
+  &-list {
+    @include flex(center, center, row, nowrap, 24px);
+  }
+
+  &-item {
+    padding: 14px 22px;
+    border-radius: 10px;
+    background-color: $gray-light;
+    display: block;
+    transition:
+      backgroud-color 0.25s linear,
+      color 0.25s ease-in;
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+}

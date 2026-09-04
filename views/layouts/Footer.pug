@@ -1,0 +1,40 @@
+footer.footer
+    .container.footer-container
+        .footer-top
+            .footer-columns
+                .footer-column
+                    img.footer-logo(src='../images/logo.jpg', alt='Logo')
+                    p.footer-description Discover the best tours and experiences in Bangkok with our expert guides and curated itineraries. Explore the city's rich culture, history, and vibrant nightlife with us.
+                    form.footer-subscribe-form
+                        input.footer-subscribe(type='email', placeholder='Enter your email', aria-label='Email address', required)
+                        button.footer-btn(type='submit', aria-label='Subscribe')
+                            img(src='../images/button-icon.png', alt='')
+                .footer-column
+                    h4.footer-heading Services
+                    ul.footer-links
+                        each val in ["Trip Planner", "Tour Planning", "Tour Guide", "Tour package", "Tour Advice"]
+                            li.footer-item
+                                a.footer-link(href='#')= val
+                .footer-column
+                    h4.footer-heading Supports
+                    ul.footer-links
+                        each val in ["Account", "Legal", "Contact", "Terms & Conditions", "Privacy Policy"]
+                            li.footer-item
+                                a.footer-link(href='#')= val
+                .footer-column
+                    h4.footer-heading Business
+                    ul.footer-links
+                        each val in ["Success", "About Us", "Blog", "Information", "Travel Guide"]
+                            li.footer-item
+                                a.footer-link(href='#')= val
+        .footer-bottom
+            p.footer-copyright © 2024 Thaiurs. All rights reserved.
+            .footer-refs
+                a.footer-social-link(href='#', aria-label='Facebook')
+                    i.bi.bi-facebook(aria-hidden='true')
+                a.footer-social-link(href='#', aria-label='LinkedIn')
+                    i.bi.bi-linkedin(aria-hidden='true')
+                a.footer-social-link(href='#', aria-label='Twitter')
+                    i.bi.bi-twitter-x(aria-hidden='true')
+                a.footer-social-link(href='#', aria-label='Instagram')
+                    i.bi.bi-instagram(aria-hidden='true')

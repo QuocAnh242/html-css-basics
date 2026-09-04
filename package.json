@@ -1,0 +1,16 @@
+{
+  "name": "html-css-basics",
+  "version": "1.0.0",
+  "description": "Bangkok Tour landing page - HTML CSS Sass Master Course",
+  "scripts": {
+    "sass:build": "sass sass/main.scss styles/main.css",
+    "sass:watch": "sass --watch sass/main.scss:styles/main.css",
+    "pug:build": "pug views/index.pug -o views -P",
+    "pug:watch": "pug -w views/index.pug -o views -P"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
